@@ -1,13 +1,7 @@
-function yes(){
-	document.getElementById('intro').className = 'dissapear';
-	document.getElementById('section1').className = 'appear';
+function button(element){
+	document.getElementById(element).className = 'dissapear';
+	document.getElementById(element).className = 'appear';
 }
 function no(){
 	alert('Are you sure?');
-}
-function marryThem(){
-
-}
-function refuse(){
-	
 }
