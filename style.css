@@ -1,0 +1,112 @@
+@font-face{
+	font-family: 'HamletOrNot';
+	src: url('HamletOrNot.ttf');
+}
+h1, h2, h3{
+	font-family: 'HamletOrNot';
+	color: black;
+	text-align: center;
+}
+h1{
+	animation-name: ani;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+img{
+	border-radius: 10px;
+	padding: 5px;
+	background-image: url('texture1.jpg');
+}
+#head1{
+	animation-name: ani2;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+#intro{
+	display: block;
+}
+#section1{
+	opacity: 0;
+	text-align: center;
+}
+#inquiry, #inquiry2{
+	opacity: 0;
+	text-align: center;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-delay: 7s;
+}
+.dissapear{
+	animation-name: diss;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+.appear{
+	animation-name: app;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+@keyframes app{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		margin-top: 0px;
+	}
+	100%{
+		margin-top: -300px;
+		opacity: 1;
+	}
+}
+@keyframes diss{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+		display: none;
+	}
+}
+@keyframes fadein{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes ani{
+	from{
+		margin-left: 100%;
+		width: 300%;
+	}
+	to{
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+@keyframes ani2{
+	from{
+		margin-right: 100%;
+		width: 300%;
+	}
+	to{
+		margin-right: 0%;
+		width: 100%;
+	}
+}
+button{
+	background-image: url('texture1.jpg');
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	font-family: 'HamletOrNot';
+}
