@@ -35,6 +35,10 @@ img{
 	opacity: 0;
 	text-align: center;
 }
+#refuseBranch{
+  opacity: 0;
+  text-align: center;
+}
 #inquiry, #inquiry2{
 	opacity: 0;
 	text-align: center;
@@ -55,6 +59,24 @@ img{
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+}
+.appear2{
+ 	animation-name: app2;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+@keyframes app2{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		margin-top: 0px;
+	}
+	100%{
+		margin-top: -825px;
+		opacity: 1;
+	}
 }
 @keyframes app{
 	0%{
