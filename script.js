@@ -1,6 +1,6 @@
 function yes(){
-	document.getElementById(element).className = 'dissapear';
-	document.getElementById(element).className = 'appear';
+	document.getElementById('intro').className = 'dissapear';
+	document.getElementById('section1').className = 'appear';
 }
 function no(){
 	alert('Are you sure?');
