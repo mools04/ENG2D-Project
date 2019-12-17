@@ -11,5 +11,13 @@ function marryThem(){
 }
 function refuse(){
 	document.getElementById('section1').className = 'dissapear';
-  	document.getElementById('refuseBranch').className = 'appear2';
+  document.getElementById('refuseBranch').className = 'appear2';
+}
+function Continue(){
+  document.getElementById('marryBranch').className = 'dissapear';
+  document.getElementById('afterMarriage').className = 'appear3';
+}
+function advice(){
+  document.getElementById('afterMarriage').className = 'dissapear';
+  document.getElementById('yourAdvice').className = 'appear4';
 }
