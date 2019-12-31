@@ -4,6 +4,7 @@
 }
 body{
 	text-align: center;
+	overflow: hidden;
 }
 h1, h2, h3{
 	font-family: 'HamletOrNot';
@@ -29,23 +30,9 @@ img{
 #intro{
 	display: block;
 }
-#section1{
+#section1, #marryBranch, #refuseBranch, #afterMarriage, #yourAdvice, #noAdvice{
 	opacity: 0;
-}
-#marryBranch{
-	opacity: 0;
-}
-#refuseBranch{
-	opacity: 0;
-}
-#afterMarriage{
-	opacity: 0;
-}
-#yourAdvice{
-	opacity: 0;
-}
-#noAdvice{
-	opacity: 0;
+	transition: transform 1s;
 }
 #inquiry, #inquiry2{
 	opacity: 0;
@@ -60,84 +47,38 @@ img{
 	-webkit-animation-name: diss;
 	-webkit-animation-duration: 2s;
 	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-iteration-count: 1;s
+	-webkit-animation-iteration-count: 1;
 }
 .appear{
-	animation-name: app;
+	transform: translateY(-300px);
+	animation-name: fadein;
 	animation-duration: 2s;
-	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 .appear2{
- 	animation-name: app2;
+	transform: translateY(-800px);
+	animation-name: fadein;
 	animation-duration: 2s;
-	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 .appear3{
-	animation-name: app3;
+	transform: translateY(-1500px);
+	animation-name: fadein;
 	animation-duration: 2s;
-	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 .appear4{
-	animation-name: app4;
+	transform: translateY(-2200px);
+	animation-name: fadein;
 	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;  
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards; 
 }
-@keyframes app4{
-  	0%{
-		opacity: 0;
-	}
-	50%{
-		margin-top: 0px;
-	}
-	100%{
-		margin-top: -2250px;
-		opacity: 1;
-		
-	}
-}
-@keyframes app3{
-  	0%{
-		opacity: 0;
-	}
-	50%{
-		margin-top: 0px;
-	}
-	100%{
-		margin-top: -1600px;
-		opacity: 1;
-	
-	}
-}
-@keyframes app2{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		margin-top: 0px;
-	}
-	100%{
-		margin-top: -900px;
-		opacity: 1;
-	
-	}
-}
-@keyframes app{
-	0%{
-		opacity: 0;
-	}
-	50%{
-		margin-top: 0px;
-	}
-	100%{
-		margin-top: -300px;
-		opacity: 1;
-	}
-}
-@-webkit-keyframes diss{
+
+@keyframes diss{
 	from{
 		opacity: 1;
 	}
