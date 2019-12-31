@@ -3,7 +3,7 @@
 	src: url('HamletOrNot.ttf');
 }
 body{
-  text-align: center;
+	text-align: center;
 }
 h1, h2, h3{
 	font-family: 'HamletOrNot';
@@ -36,13 +36,16 @@ img{
 	opacity: 0;
 }
 #refuseBranch{
-  opacity: 0;
+	opacity: 0;
 }
 #afterMarriage{
-  opacity: 0;
+	opacity: 0;
 }
 #yourAdvice{
-  opactiy: 0;
+	opacity: 0;
+}
+#noAdvice{
+	opacity: 0;
 }
 #inquiry, #inquiry2{
 	opacity: 0;
@@ -54,10 +57,10 @@ img{
 	animation-delay: 7s;
 }
 .dissapear{
-	animation-name: diss;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
+	-webkit-animation-name: diss;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;s
 }
 .appear{
 	animation-name: app;
@@ -72,39 +75,41 @@ img{
 	animation-iteration-count: 1;
 }
 .appear3{
-  animation-name: app3;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+	animation-name: app3;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
 }
 .appear4{
-  animation-name: app4;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;  
+	animation-name: app4;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;  
 }
 @keyframes app4{
-  0%{
+  	0%{
 		opacity: 0;
 	}
 	50%{
 		margin-top: 0px;
 	}
 	100%{
-		margin-top: -1400px;
+		margin-top: -2250px;
 		opacity: 1;
+		
 	}
 }
 @keyframes app3{
-  0%{
+  	0%{
 		opacity: 0;
 	}
 	50%{
 		margin-top: 0px;
 	}
 	100%{
-		margin-top: -1500px;
+		margin-top: -1600px;
 		opacity: 1;
+	
 	}
 }
 @keyframes app2{
@@ -115,8 +120,9 @@ img{
 		margin-top: 0px;
 	}
 	100%{
-		margin-top: -800px;
+		margin-top: -900px;
 		opacity: 1;
+	
 	}
 }
 @keyframes app{
@@ -131,7 +137,7 @@ img{
 		opacity: 1;
 	}
 }
-@keyframes diss{
+@-webkit-keyframes diss{
 	from{
 		opacity: 1;
 	}
@@ -163,7 +169,7 @@ img{
 		margin-right: 100%;
 		width: 300%;
 	}
-  to{
+  	to{
 		margin-right: 0%;
 		width: 100%;
 	}
@@ -176,5 +182,5 @@ button{
 	padding-bottom: 10px;
 	border-radius: 10px;
 	font-family: 'HamletOrNot';
-  display: inline-block;
+  	display: inline-block;
 }
