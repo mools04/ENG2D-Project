@@ -9,21 +9,23 @@
 	<br><br>
 	<div id=intro>
 		<h1>Welcome, Friar Lawrence!</h1>
-		<h2 id=head1>In this game, you will be in the perspestive of Friar Lawrence, a benedictine Monk in late 16th century Italy. </h2>
-		<h2 id=head1>He has sworn an oath of cellebacy, and does the work of god.</h2>
-		<h2 id=head1>Your job is to make his decisions for him, and observe how it impacts the outcome of the plot.</h2>
+		<h2 id=head1>In this game you will become Friar Lawrence, a benedictine Monk in late 16th century Italy. </h2>
+		<h2 id=head1>You have sworn an oath of cellebacy, and to do the work of god.</h2>
+		<h2 id=head1>You will experience the story of Friar Lawrence, however your decisions do not have to mirror the original ones.</h2>
 		<div id=inquiry>
 			<h3>Are you ready to play?</h3>
-			<button onclick='yes()'>Yes!</button>
-			<button onclick='no()'>No</button>
+			<button class='door' onclick='yes()'></button>
 		</div>
 	</div>
 	<div id=section1>
-		<h2>As you are picking flowers for a potion, Romeo, the sole son of the noble Montague family, comes to you with an inquiry.</h2>
+		<h2>As you are picking flowers for a potion, you say "Virtue itself turns vice, being missaplied,/ And vice sometime by action dignified." </h2>
+		<h2>What you mean by this is that by doing the wrong thing, one can achieve the right outcome.</h2>
+		<h2>Romeo, the sole son of the noble Montague family, comes to you with a request.</h2>
 		<h2>He asks, "I'll tell thee as we pass; but this I pray, /
 That thou consent to marry us to-day." </h2>
-<h2>You respond with shock. </h2>
-<h2>"Holy Saint Francis, what a change is here!/
+		<h2>The night before, young Romeo met Juliet. And to prove his deep love for her, he wants you to marry them.</h2>
+		<h2>You respond with shock. </h2>
+		<h2>"Holy Saint Francis, what a change is here!/
 Is Rosaline, whom thou didst love so dear,/
 So soon forsaken? young men's love then lies/
 Not truly in their hearts, but in their eyes."</h2>
@@ -35,26 +37,39 @@ Not truly in their hearts, but in their eyes."</h2>
 		</div>
 	</div>
 	<div id=refuseBranch>
-		<h2>Romeo does something stupid. The end.</h2>
+		<h2>Romeo goes to Friar John to marry him to Juliet. Friar John realises that you refused, and, not wanting to defy you, refuses also.</h2>
+		<h2>Romeo goes home, cries, and wonders if Rosaline is free for a date.</h2>
 	</div>
 	<div id=marryBranch>
 		<h2>You agree to marry them, hoping it will end the feud between the Montagues and the Capulets.</h2>
+		<h2>"But come, young waverer, come go with me, / In one respect I'll thy assistant be; / For this alliance may so happy prove / To turn your households' ranker to pure love."</h2>
+		<h2>Marrying the two without their parents' consent is wrong, but the right outcome may be achived.</h2>
 		<h2>Romeo and Juliet are secretly married in your cell.</h2>
     <img src='https://i.pinimg.com/originals/13/06/2e/13062eb42c3e17afdde2bc68c1a4ecd9.jpg'><br>
     <button id=Continue onclick='Continue()'>Continue</button>
 	</div>
   <div id=afterMarriage>
-    <h2>Later on, Romeo is banished from Verona for killing Tybalt. The Prince declares, "Let Romeo hence in haste, /
-Else, when he's found, that hour is his last." Romeo escapes to your cell, and asks for your advice.<h2>
+    <h2>Later on, Romeo is banished from Verona for killing Tybalt, Juliet's cousin.</h2>
+    <h2>The Prince declares, "Let Romeo hence in haste, /
+Else, when he's found, that hour is his last." Romeo escapes to your cell, and begs in desperation for your advice.</h2>
     <img src='http://images2.fanpop.com/images/photos/7000000/romeo-and-juliet-romeo-and-juliet-1968-7046255-852-480.jpg'><br><br>
     <button onclick='advice()'>Give him advice</button>
-    <button onclick='noAdvice()'>He doesn't deserve my help!</button>
+    <button onclick='lunch()'>Give him lunch</button>
   </div>
   <div id=yourAdvice>
-    <h2>You console Romeo, reminding him of all the reasons he has to be happy and blessed. "Tybalt would kill thee,/ but thou slewest Tybalt: there art thou happy." You then tell him to hide out in Mantua until his problem is solved.</h2>
+    <h2>You console Romeo, reminding him of all the reasons he has to be happy and blessed. "Tybalt would kill thee,/ but thou slewest Tybalt: there art thou happy."</h2>
+	<h2>You then advise him to hide out in Mantua, a nearby town, until you can devise a plan to reunite the young lovers.</h2>
+	<img src='mantua.jpg'>
+	<button onclick='Continue2()'>Continue</button>
   </div>
-  <div id=noAdvice>
-  	<h2>ggfh</h2> 
+  <div id=lunch>
+  	<h2>Romeo feels much better. He realizes that he hasn't eaten since meeting Juliet.</h2>  
+  	<h2>Now that his blood sugar levels are normalized, he abandons his poorly thought out plans.</h2>
+  </div>
+  <div id=juliet>
+  	<h2>Meanwhile, Juliet has been promised to Paris (a much older nobleman of Verona). You have been charged with marrying them.</h2>
+  	<h2>After you talk with Paris about wedding preparations, Juliet enters. In a state of panic, she says, "Be not so long to speak, I long to die, / If what thou speak'st speak not of remedy."</h2>
+  	<button onclick='solution()'>Offer a solution</button>
   </div>
 </body>
 </html>
