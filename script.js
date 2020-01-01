@@ -2,9 +2,6 @@ function yes(){
 	document.getElementById('intro').className = 'dissapear';
 	document.getElementById('section1').className = 'appear';
 }
-function no(){
-	alert('Are you sure?');
-}
 function marryThem(){
 	document.getElementById('section1').className = 'dissapear';
 	document.getElementById('marryBranch').className = 'appear2';
@@ -21,7 +18,11 @@ function advice(){
   	document.getElementById('afterMarriage').className = 'dissapear';
   	document.getElementById('yourAdvice').className = 'appear4';
 }
-function noAdvice(){
+function lunch(){
   	document.getElementById('afterMarriage').className = 'dissapear';
-  	document.getElementById('noAdvice').className = 'appear4';
+  	document.getElementById('lunch').className = 'appear4';
+}
+function Continue2(){
+	document.getElementById('yourAdvice').className = 'dissapear';
+	document.getElementById('juliet').className = 'appear5';
 }
