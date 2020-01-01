@@ -43,6 +43,18 @@ img{
 	animation-iteration-count: 1;
 	animation-delay: 7s;
 }
+.door{
+	background-image: url('Door_Closed.png');
+	background-position: center;
+	width: 100px;
+	height: 87px;
+}
+.door:hover{
+	animation-name: doorfade;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 .dissapear{
 	-webkit-animation-name: diss;
 	-webkit-animation-duration: 2s;
@@ -50,34 +62,48 @@ img{
 	-webkit-animation-iteration-count: 1;
 }
 .appear{
-	transform: translateY(-300px);
+	transform: translateY(-400px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 .appear2{
-	transform: translateY(-800px);
+	transform: translateY(-1200px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 .appear3{
-	transform: translateY(-1500px);
+	transform: translateY(-1800px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 .appear4{
-	transform: translateY(-2200px);
+	transform: translateY(-2600px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards; 
 }
-
+.appear5{
+	transform: translateY(-2700px);
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards; 
+}
+@keyframes doorfade{
+	from{
+		background-image: url('Door_Closed.png');
+	}
+	to{
+		background-image: url('Door_Open.png');
+	}
+}
 @keyframes diss{
 	from{
 		opacity: 1;
