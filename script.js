@@ -28,7 +28,7 @@ function Continue2(){
 }
 function solution(){
 	document.getElementById('juliet').className = 'dissapear';
-	document.getElementById('solutions').className = 'appear5';
+	document.getElementById('solutions').className = 'appear5_2';
 }
 function option1(){
 	document.getElementById('solutions').className = 'dissapear';
@@ -40,5 +40,17 @@ function option2(){
 }
 function Continue3(){
 	document.getElementById('option1').className = 'dissapear';
-	document.getElementById('final').className = 'appear6';	
+	document.getElementById('final').className = 'appear7';
+}
+function back(){
+	document.getElementById('refuseBranch').className = 'dissapear';
+	document.getElementById('section1').className = 'appear';
+}
+function back2(){
+	document.getElementById('lunch').className = 'dissapear';
+	document.getElementById('afterMarriage').className = 'appear3';
+}
+function back3(){
+	document.getElementById('option2').className = 'dissapear';
+	document.getElementById('solutions').className = 'appear5_2';
 }

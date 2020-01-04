@@ -2,6 +2,10 @@
 	font-family: 'HamletOrNot';
 	src: url('HamletOrNot.ttf');
 }
+@font-face{
+	font-family: 'ItalianCursive';
+	src: url('italiancursive.ttf');
+}
 body{
 	text-align: center;
 	overflow: scroll;
@@ -15,6 +19,12 @@ h1{
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+}
+p{
+	font-family: 'ItalianCursive';
+	text-align: center;
+	font-size: 42px;
+	font-style: bold;
 }
 img{
 	border-radius: 10px;
@@ -65,60 +75,74 @@ img.door{
 	animation-fill-mode: forwards;
 }
 .appear2{
-	transform: translateY(-1200px);
+	transform: translateY(-1300px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 .appear2_2{
-	transform: translateY(-1000px);
+	transform: translateY(-1100px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 .appear3{
-	transform: translateY(-1900px);
+	transform: translateY(-2050px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
 .appear4{
-	transform: translateY(-2600px);
+	transform: translateY(-2800px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards; 
 }
 .appear4_2{
-	transform: translateY(-3400px);
+	transform: translateY(-3550px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards; 
 }
 .appear5{
-	transform: translateY(-3400px);
+	transform: translateY(-4400px);
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards; 
+}
+.appear5_2{
+	transform: translateY(-4500px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards; 
 }
 .appear6{
-	transform: translateY(-3900px);
+	transform: translateY(-4900px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards; 
 }
 .appear6_2{
-	transform: translateY(-4700px);
+	transform: translateY(-5650px);
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards; 
+}
+.appear7{
+	transform: translateY(-6280px);
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 @keyframes diss{
 	from{
