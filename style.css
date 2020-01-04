@@ -4,6 +4,7 @@
 }
 body{
 	text-align: center;
+	overflow: scroll;
 }
 h1, h2, h3{
 	font-family: 'HamletOrNot';
